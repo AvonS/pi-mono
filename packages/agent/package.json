@@ -11,13 +11,14 @@
 	],
 	"scripts": {
 		"clean": "shx rm -rf dist",
-		"build": "tsgo -p tsconfig.build.json",
+		"build": "npx tsgo -p tsconfig.build.json",
 		"dev": "tsgo -p tsconfig.build.json --watch --preserveWatchOutput",
 		"test": "vitest --run",
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@mariozechner/pi-ai": "^0.56.2"
+		"@mariozechner/pi-ai": "^0.56.2",
+		"@sinclair/typebox": "^0.34.0"
 	},
 	"keywords": [
 		"ai",

@@ -8,6 +8,11 @@ packages/*/dist/
 packages/*/dist-chrome/
 packages/*/dist-firefox/
 
+# Bun
+bun.lock
+bunfig.toml
+.bun/
+
 # Environment
 .env
 
