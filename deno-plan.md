@@ -41,7 +41,7 @@ Scale PI-LoYo to support multiple concurrent users on a single VPS with total is
 ## 3. Canonical Translation & Streaming
 
 * Chunked Middleware: Tier 2 buffers streaming tokens from Tier 1 to accommodate Slack/Teams rate limits while maintaining 0ms latency for Terminal clients.
-* RBAC Guard: Tier 1 intercepts all Tool Call fragments. Execution is paused until Tier 1 validates the call against the User's role or requests Human-in-the-Loop (HITL) approval.
+* RBAC Guard: Tier 1 intercepts all Tool Call fragments. Execution is paused until Tier 1 validates the call against the User's role or requests Human-in-the-Loop (HITL) approval. For high-risk operations, this can include interactive approval prompts (similar to sudo) with timeout-based permissions.
 
 ------------------------------
 ## Success Metrics
